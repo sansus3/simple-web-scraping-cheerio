@@ -14,7 +14,7 @@ app.get('/',async (req,res)=>{
                 "date": new Date().toLocaleDateString(),
                 "titulo":$('title').text()})
     } catch (error) {
-        res.json(error)
+        res.json({error})
     }
 
 })
